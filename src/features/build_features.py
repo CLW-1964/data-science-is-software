@@ -31,7 +31,7 @@ def remove_invalid_data(path):
     df = pd.read_csv(path, index_col=0)
 
     # preselected columns
-    useful_columns = ['amount_tsh',
+    '''useful_columns = ['amount_tsh',
                       'gps_height',
                       'longitude',
                       'latitude',
@@ -39,11 +39,10 @@ def remove_invalid_data(path):
                       'population',
                       'construction_year',
                       'extraction_type_class',
-                      'status_group',
                       'management_group',
                       'quality_group',
                       'source_type',
-                      'waterpoint_type']
+                      'waterpoint_type']'''
 
     df = df[useful_columns]
 
